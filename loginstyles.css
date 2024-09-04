@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #062863;
+    background-attachment: fixed;
+    /* position: fixed; */
+    overflow: hidden;
+    height: 100%;
+}
+/* LONGIN STYLES */
+.login-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    gap: 2rem;
+    z-index: 1;
+}
+
+.login-box {
+    /* border: 2px solid black; */
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    width: 460px;
+    background-color: #fff;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.heading {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background-color: #fff;
+}
+
+.heading h1 {
+    font-size: 22px;
+    background-color: #fff;
+    color: #083e9e;
+    font-family: U8, sans-serif;
+}
+
+.heading p {
+    background-color: #fff;
+    color: #4a5568;
+    font-family: Karla, sans-serif;
+    font-size:14px ;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    height: 300px;
+    background-color: #fff;
+    padding: 0 15px;
+    padding-bottom: 50px;
+}
+
+.input-grp1 {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    gap: 9px;
+    background-color: #fff;
+}
+
+.input-grp1 label {
+    background-color: #fff;
+    color: #4a5568;
+    font-weight: 700;
+    font-family: U8, sans-serif;
+    font-size: .75rem;
+}
+
+.input-grp1 input {
+    /* width: 200px; */
+    height: 50px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 15px;
+    outline: none;
+    background-color: #edf2f7;
+    color: #1a202c;
+
+
+}
+
+.input-grp2 {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    gap: 9px;
+    background-color: #fff;
+}
+
+.input-grp2 label {
+    background-color: #fff;
+    color: #4a5568;
+    font-weight: 700;
+    font-family: U8, sans-serif;
+    font-size: .75rem;
+}
+
+.input-grp2 input {
+    /* width: 200px; */
+    height: 50px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 15px;
+    outline: none;
+    background-color: #edf2f7;
+    color: #1a202c;
+}
+
+.login-form button {
+    background-color: #0D60D8;
+    position: relative;
+    border: none;
+    color: white;
+    font-size: 19px;
+    text-transform: uppercase;
+    height: 50px;
+    padding: 0 30px;
+    margin-left: 30px;
+    margin-right: 24px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /* width: 190px; */
+    font-size: 14px;
+    font-family: U8, sans-serif;
+    font-weight: 700;
+
+}
+
+.footer-text {
+    text-align: center;
+    padding-bottom: 100px;
+    padding-top: 5px;
+}
+
+.footer-text p {
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.footer-text a {
+    text-decoration: none;
+    color: #FFFF;
+    font-size: .875rem;
+    font-family:  sans-serif;
+}
+.top-right,
+.top-left,
+.bottom-left,
+.bottom-right {
+    position: fixed;
+    z-index: 0;
+    width: 15%;
+    /* Keep behind the login container */
+}
+.top-left{
+    width: 15%;
+    position: absolute;
+    top:-55px;
+    left: -10px;
+}
+.top-right{
+    width: 15%;
+    position: absolute;
+    left: 1250px;
+    top: -2px;
+}
+.bottom-left{
+    top: 500px;
+    left: -50px;
+
+}
+.bottom-right{
+    top: 480px;
+    right: -60px;
+}
